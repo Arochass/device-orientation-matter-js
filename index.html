@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Matter</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"
+      integrity="sha512-5T245ZTH0m0RfONiFm2NF0zcYcmAuNzcGyPSQ18j8Bs5Pbfhp5HP1hosrR8XRt5M3kSRqzjNMYpm2+it/AUX/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.6.1/randomColor.min.js"
+      integrity="sha512-vPeZ7JCboHcfpqSx5ZD+/jpEhS4JpXxfz9orSvAPPj0EKUVShU2tgy7XkU+oujBJKnWmu4hU7r9MMQNWPfXsYw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <p>Rotate your device:</p>
+    gamma(x):<a id="gamma"> </a><sup>o</sup>
+    <br />
+    beta(y):<a id="beta"> </a><sup>o</sup>
+    <br />
+    alpha(y):<a id="alpha"> </a><sup>o</sup>
+    <br />
+    <script type="text/javascript">
+      function testDeviceOrientation() {
+        if (typeof DeviceOrientationEvent !== 'function') {
+          return setResult('DeviceOrientationEvent not detected')
+        }
+        if (typeof DeviceOrientationEvent.requestPermission !== 'function') {
+          return setResult(
+            'DeviceOrientationEvent.requestPermission not detected'
+          )
+        }
+        DeviceOrientationEvent.requestPermission().then(function (result) {
+          return setResult(result)
+        })
+      }
+
+      function setResult(result) {
+        // document.getElementById('result').innerHTML = 'RESULTs: ' + result
+      }
+    </script>
+    <button onclick="testDeviceOrientation();">
+      Request orientation permission
+    </button>
+  </body>
+</html>
