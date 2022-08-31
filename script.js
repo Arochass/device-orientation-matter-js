@@ -37,7 +37,7 @@ window.onload = () => {
   // create an engine
   var engine = Engine.create()
   var stackA = Composites.stack(0, 0, 7, 4, 0, 0, function (x, y) {
-    return Bodies.polygon(
+    return Bodies.circle(
       x,
       y,
       1 + Math.ceil(Math.random() * 1),
