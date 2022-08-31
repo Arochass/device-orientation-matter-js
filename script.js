@@ -36,7 +36,7 @@ window.onload = () => {
 
   // create an engine
   var engine = Engine.create()
-  var stackA = Bodies.circle(100, 100, 20,{
+  var stackA = Bodies.circle(100, 100, 40,{
     render: {
       fillStyle: 'red',
     },
@@ -67,13 +67,13 @@ window.onload = () => {
       wallSettings.size,
       wallSettings
     ), //top
-    // Bodies.rectangle(
-    //   game.width * 0.5,
-    //   game.height + wallSettings.size * 0.5,
-    //   game.width,
-    //   wallSettings.size,
-    //   wallSettings
-    // ), //bottom
+    Bodies.rectangle(
+      game.width * 0.5,
+      game.height + wallSettings.size * 0.5,
+      game.width,
+      wallSettings.size,
+      wallSettings
+    ), //bottom
     Bodies.rectangle(
       -wallSettings.size * 0.5,
       game.height * 0.5,
