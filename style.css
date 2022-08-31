@@ -1,11 +1,15 @@
 body {
+  /* height: 200vh; */
+  /* background-image: url(started.png);
+  background-size: cover;
+  background-repeat: no-repeat; */
+  color: black;
+}
+canvas {
   height: 200vh;
   background-image: url(started.png);
   background-size: cover;
   background-repeat: no-repeat;
-  color: black;
-}
-canvas {
   position: absolute;
   left: 0;
   top: 0;
