@@ -21,7 +21,7 @@ window.onload = () => {
   var game = {
     angle: 0, //keeps track of rotations
     width: window.innerWidth, //400, //window.innerWidth-20,//1200,
-    height: 2*window.innerHeight, //600, //window.innerHeight-20, //800,
+    height: window.innerHeight*2, //600, //window.innerHeight-20, //800,
   }
 
   // module aliases
