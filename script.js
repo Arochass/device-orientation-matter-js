@@ -82,7 +82,7 @@ window.onload = () => {
       wallSettings
     ), //left
     Bodies.rectangle(
-      game.width + wallSettings.size * 0.5,
+      game.width*0.5 + wallSettings.size * 0.5,
       game.height * 0.5,
       wallSettings.size,
       game.height + wallSettings.size,
