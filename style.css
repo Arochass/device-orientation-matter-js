@@ -1,8 +1,8 @@
 body {
   width: 200vw;
-  /* background-image: url(started.png);
+  background-image: url(started.png);
   background-size: cover;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   color: black;
 }
 canvas {
