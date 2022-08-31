@@ -37,21 +37,7 @@ window.onload = () => {
   // create an engine
   var engine = Engine.create()
   var stackA = Composites.stack(0, 0, 7, 4, 0, 0, function (x, y) {
-    return Bodies.circle(
-      x,
-      y,
-      1 + Math.ceil(Math.random() * 1),
-      1 + Math.random() * 35,
-      {
-        render: {
-          restitution: 1,
-          fillStyle: randomColor({
-            luminosity: 'bright',
-          }),
-          strokeStyle: 'white',
-        },
-      }
-    )
+    return Bodies.rectangle(x, y, 40, 40)
   })
   //access stackA elements with:   stackA.bodies[i]   i = 1 through 6x6
   var wall = Bodies.rectangle(200, 300, 150, 20, {
