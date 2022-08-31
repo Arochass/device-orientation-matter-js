@@ -1,16 +1,13 @@
 body {
   height: 200vh;
-  /* background-image: url(started.png);
+  background-image: url(started.png);
   background-size: cover;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   color: black;
 }
 canvas {
   height: 200vh;
   width: 100vw;
-  background-image: url(started.png);
-  background-size: cover;
-  background-repeat: no-repeat;
   position: absolute;
   left: 0;
   top: 0;
