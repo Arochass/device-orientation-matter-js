@@ -1,6 +1,7 @@
 body {
   background-image: url(started.png);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   color: black;
 }
 canvas {
