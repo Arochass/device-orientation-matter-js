@@ -1,5 +1,6 @@
 body {
-  background-color: white;
+  background-image: url(started.png);
+  background-size: cover;
   color: black;
 }
 canvas {
