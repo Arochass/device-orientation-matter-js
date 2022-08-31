@@ -10,7 +10,7 @@ window.onload = () => {
     document.getElementById('gamma').innerHTML = Math.round(x)
     document.getElementById('beta').innerHTML = Math.round(y)
     document.getElementById('alpha').innerHTML = Math.round(z)
-    const scale = 0.1
+    const scale = 0.05
     engine.world.gravity.y = y * scale
     engine.world.gravity.x = x * scale
     //rotate works, but not that cool
