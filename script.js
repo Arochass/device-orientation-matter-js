@@ -36,7 +36,12 @@ window.onload = () => {
 
   // create an engine
   var engine = Engine.create()
-  var stackA = Bodies.circle(100, 100, 50)
+  var stackA = Bodies.circle(100, 100, 50,{
+    render: {
+      fillStyle: '#666',
+      strokeStyle: 'white',
+    },
+  })
   //access stackA elements with:   stackA.bodies[i]   i = 1 through 6x6
   var wall = Bodies.rectangle(200, 300, 150, 20, {
     isStatic: true,
