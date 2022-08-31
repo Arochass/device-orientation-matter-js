@@ -21,7 +21,7 @@ window.onload = () => {
   var game = {
     angle: 0, //keeps track of rotations
     width: window.innerWidth, //400, //window.innerWidth-20,//1200,
-    height: window.innerHeight+2000, //600, //window.innerHeight-20, //800,
+    height: window.innerHeight, //600, //window.innerHeight-20, //800,
   }
 
   // module aliases
@@ -101,7 +101,7 @@ window.onload = () => {
   document.body.appendChild(canvas)
   window.onresize = function (event) {
     ctx.canvas.width = window.innerWidth
-    ctx.canvas.height = window.innerHeight
+    ctx.canvas.height = (window.innerHeight)*2
   }
   ;(function render() {
     var bodies = Composite.allBodies(engine.world)
