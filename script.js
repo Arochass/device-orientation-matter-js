@@ -36,7 +36,7 @@ window.onload = () => {
 
   // create an engine
   var engine = Engine.create()
-  var stackA = Bodies.circle(100, 100, 50,{
+  var stackA = Bodies.circle(100, 100, 20,{
     render: {
       fillStyle: 'red',
     },
