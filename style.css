@@ -6,7 +6,6 @@ body {
   color: black;
 }
 canvas {
-  height: 200vh;
   position: absolute;
   left: 0;
   top: 0;
